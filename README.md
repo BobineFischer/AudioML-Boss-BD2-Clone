@@ -5,9 +5,21 @@
 This project explores the use of Recurrent Neural Networks (LSTM) to clone the nonlinear distortion and harmonic characteristics of a physical analog guitar pedal (Boss BD-2 Blues Driver). 
 
 ## Audio Demos
-* You can listen to the high-quality audio comparisons (Input DI vs. Real BD-2 vs. AI Output) in the shared drive below:
-* [Click here to listen to the Audio Demos on Google Drive](https://drive.google.com/drive/folders/1m71JuJhoZnlrqUgSNGGDVgVfYDNnQnot?usp=sharing)
-* **Input (Clean DI):** * **Target (Real Boss BD-2):** * **Output (AI Generated):** ## Tech Stack
+
+You can listen to the high-quality audio comparisons in the shared Google Drive folder below:
+
+🔗 **[Click here to listen to the Audio Demos on Google Drive](https://drive.google.com/drive/folders/1m71JuJhoZnlrqUgSNGGDVgVfYDNnQnot?usp=sharing)**
+
+**Files included in the drive:**
+* **`DI.wav`** : Input (Clean DI, used as the raw dataset)
+* **`BD.wav`** : Target (Real Boss BD-2, used as the target dataset)
+* **`test_di.wav`** : Unseen clean audio for testing
+* **`ai_bd2_output.wav`** : Final Output (AI Generated BD-2 Distortion)
+
+---
+
+## Tech Stack
+
 * **Framework:** PyTorch (with Apple Silicon MPS Acceleration)
 * **Audio Processing:** Soundfile, Numpy
 * **Architecture:** LSTM (Long Short-Term Memory) network tailored for 1D audio time-series.
